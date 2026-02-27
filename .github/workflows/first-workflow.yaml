@@ -16,4 +16,4 @@ jobs:
       run: ls -la
 
     - name: View File Content
-      run: cat README.md
+      run: cat readme
