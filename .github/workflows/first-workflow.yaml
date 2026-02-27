@@ -1,0 +1,16 @@
+name: My First Workflow
+
+on: [push]
+
+jobs:
+  To_View:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Say Hello to our guys
+      run: echo "Hello Learner Sri Hari"
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: View File
+      run: ls -la
