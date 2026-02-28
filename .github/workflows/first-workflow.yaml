@@ -26,3 +26,10 @@ jobs:
 
     - name: Generate ASCII
       run:  bash scripts/dragon_chaos.sh
+
+  To_RIDE:
+    needs: To_View
+    runs-on: ubuntu-latest
+    steps:
+    - name: Choose your favorite one
+      run: echo "Always... Daemon Targaryen"
