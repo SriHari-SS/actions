@@ -1,4 +1,4 @@
-name: My First Workflow
+name: Its Time for VHAGAR
 
 on: [push]
 
@@ -17,3 +17,12 @@ jobs:
 
     - name: View File Content
       run: cat readme
+
+    - name: Istall ASCII Generator
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y figlet cowsay lolcat
+        chmod +x scripts/dragon_chaos.sh
+
+    - name: Generate ASCII
+      run:  bash scripts/dragon_chaos.sh
